@@ -188,3 +188,8 @@ try:
     raise Networkerror("Bad hostname")
 except Networkerror,e:
     print e.args
+
+二十四、类
+不允许实例化的类访问私有数据，但你可以使用 object._className__attrName 访问属性
+print counter._Counter__secretCount
+
