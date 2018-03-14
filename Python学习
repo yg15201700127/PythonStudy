@@ -135,3 +135,24 @@ e	数学常量 e，e即自然常数（自然常数）
       %g	 %f和%e的简写
       %G	 %f 和 %E 的简写
       %p	 用十六进制数格式化变量的地址
+
+二十、函数
+def functionname( parameters ):
+   "函数_文档字符串"
+   function_suite
+   return [expression]
+   
+def printme( str ):
+   print str
+   return   
+   
+  不定长参数：def functionname([formal_args,] *var_args_tuple ):  #*号
+  
+ 二十三、函数调用全局变量
+ Money = 2
+def AddMoney():
+    global Money # 全局global
+    Money = Money + 1
+print(Money)
+AddMoney()
+print(Money)
